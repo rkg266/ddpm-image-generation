@@ -40,5 +40,5 @@ Read my blog on mathematical foundations of the DDPM: [Understanding Diffusion M
 ## Results
 
 ## References
-[1] [DDPM paper](https://arxiv.org/abs/2006.11239)
+[1] [DDPM paper](https://arxiv.org/abs/2006.11239) <br/>
 [2] Referred repo [@w86763777](https://github.com/w86763777/pytorch-ddpm?tab=readme-ov-file)
