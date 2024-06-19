@@ -1,0 +1,29 @@
+apiVersion: batch/v1
+kind: Job
+metadata:
+  name: ddpm-train-job
+spec:
+  template:
+    spec:
+      containers:
+      - name: ddpm-train-container
+        image: grk266/my-pytorch-ddpm:latest  # Replace with the image containing your DDPM training code. Dockerfile in ubuntu directory
+        command: ["python", "main.py", "--train", "--batch_size", "64", "--logdir", "./data/CIFAR10"] 
+        resources:
+          limits:
+            nvidia.com/gpu: 1
+            cpu: "2"
+            memory: "32Gi"
+          requests:
+            nvidia.com/gpu: 1
+            cpu: "1"
+            memory: "16Gi"
+        volumeMounts:
+        - name: ddpm
+          mountPath: /workspace/data  # Mount path for the persistent volume
+      restartPolicy: Never
+      volumes:
+      - name: ddpm
+        persistentVolumeClaim:
+          claimName: ddpm  # Reference to your PersistentVolumeClaim
+  backoffLimit: 4  # Number of retries in case of job failure
