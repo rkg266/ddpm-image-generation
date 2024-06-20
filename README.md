@@ -1,6 +1,6 @@
 # ddpm-image-generation
-Implementation of Denoising Diffusion Probabilistic Model (DDPM) for study purposes. 
-Read my blog on mathematical foundations of the DDPM: [Understanding Diffusion Model Through First Principles of Probability](https://rkg266.github.io/posts/2024/04/ddpm-math/)
+Implementation of Denoising Diffusion Probabilistic Model (DDPM) for study purposes. <br/>
+Read my blog on the mathematical foundations of DDPM: [Understanding Diffusion Model Through First Principles of Probability](https://rkg266.github.io/posts/2024/04/ddpm-math/)
 
 ## Requirements
 - Dataset: CIFAR10
