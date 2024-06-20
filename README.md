@@ -38,6 +38,10 @@ Read my blog on mathematical foundations of the DDPM: [Understanding Diffusion M
     --eval
 
 ## Results
+- Inception score: mean (3.223), std (0.137)
+  ![image1](./results/samples.png)
+- Inception score: mean (3.574), std (0.628)
+- ![image2](./results/samples_ema.png)
 
 ## References
 [1] [DDPM paper](https://arxiv.org/abs/2006.11239) <br/>
