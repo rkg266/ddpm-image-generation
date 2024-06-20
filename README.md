@@ -17,6 +17,7 @@ Read my blog on the mathematical foundations of DDPM: [Understanding Diffusion M
   └── cifar10.train.npz
 
 ## Training
+- For GPU users, refer to the `for_pod_users` directory.
 - Take CIFAR10 dataset to train.
   ```sh
   python main.py --train \
